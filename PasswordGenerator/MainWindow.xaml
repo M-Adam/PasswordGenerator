@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PasswordGenerator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="PasswordGenerator" Height="105.132" Width="341.282" ResizeMode="NoResize" Closing="Window_Closing" Loaded="Window_Loaded">
     <Grid>
-        
+        <TextBox x:Name="PasswordBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="NoWrap" IsReadOnly="True" Text="" VerticalAlignment="Top" Width="248"/>
+        <Button x:Name="GenerateBtn" Content="Create" HorizontalAlignment="Left" Margin="251,10,0,0" VerticalAlignment="Top" Width="67" Height="23" IsDefault="True" Click="generateBtn_Click"/>
+        <CheckBox x:Name="CapitalsCb" Content="Capitals" Margin="63,38,0,0" IsChecked="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="63"/>
+        <CheckBox x:Name="DigitsCb" Content="Digits" Margin="131,38,0,0" IsChecked="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53"/>
+        <CheckBox x:Name="SymbolsCb" Content="" Margin="189,38,0,0" Width="16" IsChecked="True" Height="21" HorizontalAlignment="Left" VerticalAlignment="Top" Checked="SymbolsCb_Checked" Unchecked="SymbolsCb_Unchecked"/>
+        <TextBox x:Name="LengthBox" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" Text="15" VerticalAlignment="Top" Width="30"/>
+        <Button x:Name="LengthUpBtn" Padding="0,-4,0,0" Content="↑" HorizontalAlignment="Left" Margin="40,36,0,0" VerticalAlignment="Top" Width="18" Height="12" Click="LengthUpBtn_Click"/>
+        <Button x:Name="LengthDownBtn" Content="↓" Padding="0,-4,0,0" HorizontalAlignment="Left" Margin="40,47,0,0" VerticalAlignment="Top" Height="12" FontFamily="Arial Black" Width="18" Click="LengthDownBtn_Click"/>
+        <TextBox x:Name="AllowedSymbolsBox" IsEnabled="True" HorizontalAlignment="Left" Height="23" Margin="210,36,0,0"
+                 VerticalAlignment="Top" Width="108"></TextBox>
+
     </Grid>
 </Window>
