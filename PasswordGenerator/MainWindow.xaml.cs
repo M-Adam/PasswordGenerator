@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using PasswordGenerator.Properties;
 using static PasswordGenerator.PasswordCode;
+using static PasswordGenerator.PeselCode;
 
 namespace PasswordGenerator
 {
@@ -94,6 +95,11 @@ namespace PasswordGenerator
             SymbolsCb.IsChecked = AppSettings.Symbols;
             LengthBox.Text = AppSettings.Length.ToString();
             AllowedSymbolsBox.Text = AppSettings.SymbolsString;
+        }
+
+        private void PeselBtn_Click(object sender, RoutedEventArgs e)
+        {
+            PeselBox.Text = CreatePesel();
         }
     }
 }

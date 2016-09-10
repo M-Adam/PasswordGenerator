@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PasswordGenerator"
         mc:Ignorable="d"
-        Title="PasswordGenerator" Height="105.132" Width="341.282" ResizeMode="NoResize" Closing="Window_Closing" Loaded="Window_Loaded">
+        Title="PasswordGenerator" Height="132.132" Width="341.282" ResizeMode="NoResize" Closing="Window_Closing" Loaded="Window_Loaded">
     <Grid>
         <TextBox x:Name="PasswordBox" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="NoWrap" IsReadOnly="True" Text="" VerticalAlignment="Top" Width="248"/>
         <Button x:Name="GenerateBtn" Content="Create" HorizontalAlignment="Left" Margin="251,10,0,0" VerticalAlignment="Top" Width="67" Height="23" IsDefault="True" Click="generateBtn_Click"/>
@@ -17,6 +17,8 @@
         <Button x:Name="LengthDownBtn" Content="↓" Padding="0,-4,0,0" HorizontalAlignment="Left" Margin="40,47,0,0" VerticalAlignment="Top" Height="12" FontFamily="Arial Black" Width="18" Click="LengthDownBtn_Click"/>
         <TextBox x:Name="AllowedSymbolsBox" IsEnabled="True" HorizontalAlignment="Left" Height="23" Margin="210,36,0,0"
                  VerticalAlignment="Top" Width="108"></TextBox>
+        <TextBox x:Name="PeselBox" HorizontalAlignment="Left" Height="23" Margin="10,64,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="238"/>
+        <Button x:Name="PeselBtn" Content="PESEL" HorizontalAlignment="Left" Margin="253,64,0,0" VerticalAlignment="Top" Width="65" Height="23" Click="PeselBtn_Click"/>
 
     </Grid>
 </Window>
